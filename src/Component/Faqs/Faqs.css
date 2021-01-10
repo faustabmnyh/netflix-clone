@@ -1,0 +1,29 @@
+.faqs {
+    background: black;
+    color: white;
+    margin-bottom: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.faqs__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 45px;
+    max-width: 815px;
+    margin: auto;
+}
+
+
+.faqs__title {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    margin-top: 0;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .faqs__title{
+        font-size: 30px;
+    }
+}

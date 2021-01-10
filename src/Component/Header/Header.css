@@ -1,0 +1,143 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+  transition: all 0.5s ease-in;
+}
+
+.header__black {
+  background-color: #111;
+}
+
+.header__logo {
+  width: 120px;
+  object-fit: contain;
+}
+
+.header__avatar {
+  width: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.signUp {
+  background: red;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 17px;
+}
+
+.signUp:hover {
+  cursor: pointer;
+}
+
+.header__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__textLink {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.header__textLink:hover {
+  font-weight: bold;
+}
+
+.header__dropdown {
+  display: none;
+  background-color: black;
+  position: absolute;
+  padding: 10px;
+  top: 64px;
+  right: 10px;
+  width: 120px;
+}
+
+.header__textName {
+  margin-left: 10px;
+  color: white;
+}
+.header__textName:hover {
+  cursor: default;
+  font-weight: bold;
+}
+
+.header__profile {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.header__rightMain:hover > .header__dropdown {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+}
+.header__signout {
+  color: white;
+}
+
+.header__signout:hover {
+  font-weight: bold;
+}
+
+/* search */
+.header__search {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .header__search {
+    display: none;
+  }
+}
+
+.header__searchIcon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  filter: brightness(0) invert(1);
+  width: 16px;
+}
+
+.header__searchInput {
+  background-color: #44444459;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  height: 30px;
+  font-size: 14px;
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: width 0.5s;
+}
+
+.header__searchInputActive {
+  width: 200px;
+  padding: 0 10px;
+  margin-left: 10px;
+  opacity: 1;
+  border-radius: 3px;
+}

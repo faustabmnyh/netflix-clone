@@ -1,0 +1,55 @@
+.jumbotron {
+  background-color: black;
+  color: white;
+  background-image: url(https://github.com/karlhadwen/netflix/blob/master/public/images/misc/home-bg.jpg?raw=true);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  min-height: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.jumbotron__bannerTitle {
+  max-width: 810px;
+  padding: 70px 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron__bannerTitle h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  max-width: 640px;
+  margin: auto;
+}
+
+.jumbotron__bannerTitle h3 {
+  font-size: 26px;
+  font-weight: normal;
+  margin: 0 auto;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .jumbotron {
+    min-height: 530px;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+
+  .jumbotron__bannerTitle h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .jumbotron__bannerTitle h3 {
+    font-size: 18px;
+  }
+}

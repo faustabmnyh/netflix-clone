@@ -1,0 +1,215 @@
+.signin {
+  background-image: url(https://github.com/karlhadwen/netflix/blob/master/public/images/misc/home-bg.jpg?raw=true);
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.signin__nav {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signin__nav img {
+  width: 200px;
+  object-fit: contain;
+}
+
+.signin__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  min-height: 660px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 60px 68px 40px;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.signin__container form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.signin form input {
+  background: #333;
+  border-radius: 4px;
+  color: white;
+  border: 0;
+  line-height: 50px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.signin form input:last-of-type {
+  margin-bottom: 30px;
+}
+
+.signin h1 {
+  font-size: 32px;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+.signin form button {
+  background: red;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 24px 0 12px;
+  padding: 16px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.signin form button:disabled {
+  opacity: 0.5;
+}
+
+.signin__formText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signin h3 {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signin p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: normal;
+  color: #8c8c8c;
+}
+
+.signin__fb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.signin__fb p {
+  margin-bottom: 10px;
+}
+
+.signin__fb img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+/* awal check box */
+.signin__remember {
+  display: flex;
+  position: relative;
+}
+
+.signin__remember input {
+  margin-right: 5px;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #8c8c8c;
+  border-radius: 3px;
+}
+
+.checkmark:hover {
+  cursor: pointer;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.signin__remember input:checked ~ .checkmark {
+  background-color: #8c8c8c;
+}
+
+.signin__remember input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.signin__remember .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.signin__formText label {
+  color: #8c8c8c;
+  text-align: center;
+  margin-top: -2px;
+  font-size: 14px;
+}
+
+/* akhir checkbox */
+
+.signin__help {
+    margin-top: -30px;
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signin__help:hover {
+    text-decoration: underline;
+}
+
+.signin__signup {
+  color: white;
+  text-decoration: none;
+}
+
+.signin__signup:hover {
+  text-decoration: underline;
+}
+
+.signin__error {
+  background-color: rgb(243, 38, 38);
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 0 0 16px;
+  color: white !important;
+  padding: 15px 20px;
+}
+
+.signin__more {
+  color: #06549e;
+  text-decoration: none;
+}
+
+.signin__more:hover {
+  text-decoration: underline;
+}
